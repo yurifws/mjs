@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+  <script>
+
+    function sum(a, b) {
+      console.log(this) 
+      return a + b
+    }
+
+    const me = { name: 'Jose' }
+
+    //primeiro argumento dos métodos call, apply = o contexto
+    //no console por: sum.call(me, 1, 2)
+    //no console por: sum.apply(me, [1,2])
+
+  </script>
+  
+</body>
+</html>
