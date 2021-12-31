@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Argumentos de função</title>
+</head>
+<body>
+  <script>
+
+    function sum(a, b) {
+      console.log(arguments)
+      return a + b
+    }
+
+    // b = 0 - valor padrão
+    const sumArrowFun = (a, b = 0) => a + b
+
+    //arguments só é definido em funcoes que não sao arrow function.
+    /*
+    const sumArrowFun = () => {
+      console.log(arguments)
+      return arguments[0] + arguments[1] //index.html:15 Uncaught ReferenceError: arguments is not defined
+    }
+    */
+   
+  </script>
+  
+</body>
+</html>
