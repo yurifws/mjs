@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Arrow functions</title>
+</head>
+<body>
+  <script>
+
+    const getRemainingYears = (age) =>  18 - age
+
+    const me = {
+      name: 'Lucas',
+      age: 12,
+      greet: () => {
+        console.log(this) 
+        // o contexto da arrow function será 
+        //o contexto de onde ela está sendo executada
+      }
+    }
+
+    //function declaration
+    /*
+    function name() {
+      
+    }
+
+    //function expression
+    const test = function () {
+      
+    }
+
+    //arrow function
+    const getRemainingYears = (age) => {
+      return 18 - age
+    }
+    */
+   
+  </script>
+  
+</body>
+</html>
