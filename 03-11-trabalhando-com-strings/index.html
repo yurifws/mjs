@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Trabalhando com strings</title>
+</head>
+<body>
+  <script>
+
+    const name = 'Julio'
+    const age = 32
+
+    const sentence = 'olá, meu nome é ' + name + ' e eu tenho ' + age + ' anos.'
+
+    //template string - interpolação
+    const sentence2 = `olá, meu nome é ${name} e eu tenho ${age} anos`
+
+    //template string - mantem a identação
+    const html = `
+      <ul>
+        <li>
+          ${name}
+        </li>
+        <li>
+          ${age}
+        </li>
+      </ul>
+    `
+
+    // não mantem a identação
+    const html2 = '\
+      <ul>\
+        <li>\
+          ${name}\
+        </li>\
+        <li>\
+          ${age}\
+        </li>\
+      </ul>\
+    '
+
+    console.log(sentence)
+    console.log(sentence2)
+    console.log(html)
+    console.log(html2)
+
+  </script>
+  
+</body>
+</html>
