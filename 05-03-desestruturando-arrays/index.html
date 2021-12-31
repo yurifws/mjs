@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Desestruturando arrays</title>
+</head>
+<body>
+  <script>
+
+    const fruits = ['banana', 'morango', 'manga']
+
+    const [firstItem, secondItem] = fruits
+    const [, secondItem2] = fruits
+
+    const person = { name: 'Italo', age: 14 }
+    const person2 = { name: 'Jose', age: 22 }
+    const person3 = { name: 'Rafael', age: 32 }
+
+    const friends = [ person, person2, person3 ]
+
+    const [, { name }] = friends
+
+    const chart = [[1, 2], [3, 4], [5, 6]]
+
+    const [, [, y]] = chart
+
+    console.log(firstItem, secondItem, secondItem2)
+    console.log(name, y)
+
+  </script>
+  
+</body>
+</html>
