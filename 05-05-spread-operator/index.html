@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Spread Operator</title>
+</head>
+<body>
+  <script>
+
+    const parts = ['ombro', 'joelho']
+    const sentence = ['cabeça', ...parts, 'pés']
+
+    function createUser(name, age, ...contacts) {
+
+      return {
+        name,
+        age,
+        contacts
+      }
+
+    }
+
+    const immutableArray = ['select', '*', 'from', 'posts']
+
+    //clone de objeto com spread
+    const mutableArray = [...immutableArray]
+    mutableArray.push('where id = 1')
+    
+  </script>
+  
+</body>
+</html>
