@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Spread Operator</title>
+</head>
+<body>
+  <script>
+
+    //sem rest operator
+    function createUserNoRest(name, age, contact1, contact2, contact3) {
+
+      const args = Array.from(arguments)
+      return {
+        name,
+        age,
+        contacts: args.slice(2)
+      }
+
+    }
+
+    // rest operator
+    function createUserRest(name, age, ...contacts) {
+
+      return {
+        name,
+        age,
+        contacts
+      }
+
+    }
+    
+  </script>
+  
+</body>
+</html>
